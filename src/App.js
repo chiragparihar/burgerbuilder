@@ -1,11 +1,16 @@
-
-
-function App() {
-  return (
-    <div >
-      <h1>hello react developer</h1>
-    </div>
-  );
+import React, {Component} from 'react';
+import Layout from './components/Layout/Layout';
+import BurgerBuilder from './containers/Burgerbuilder/BurgerBuilder';
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <Layout>
+          <BurgerBuilder/>
+        </Layout>
+      </div>
+    );
+  }
 }
 
 export default App;
